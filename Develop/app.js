@@ -89,7 +89,6 @@ function askForRole(employeeConfigObj) {
 
 // Determine which additional question to ask
 function evaluateRole(employeeConfigObj) {
-  //   console.log(employeeConfigObj);
   if (employeeConfigObj.role === "Manager") {
     askForOfficeNumber(employeeConfigObj);
   } else if (employeeConfigObj.role === "Engineer") {
@@ -119,7 +118,6 @@ function createNewManager(employeeConfigObj) {
   const newManager = new Manager(employeeConfigObj);
   employeeArr.push(newManager);
   askForNextEntry();
-  //   console.log(newManager);
 }
 
 // Engineer question
@@ -143,7 +141,6 @@ function createNewEngineer(employeeConfigObj) {
   const newEngineer = new Engineer(employeeConfigObj);
   employeeArr.push(newEngineer);
   askForNextEntry();
-  // console.log(newEngineer);
 }
 
 // Intern question
@@ -166,7 +163,6 @@ function createNewIntern(employeeConfigObj) {
   const newIntern = new Intern(employeeConfigObj);
   employeeArr.push(newIntern);
   askForNextEntry();
-  // console.log(newIntern);
 }
 
 function askForNextEntry() {
@@ -187,8 +183,16 @@ function askForNextEntry() {
         main();
       } else {
         const html = render(employeeArr);
+        createHtmlFile(html);
       }
     });
+}
+
+function createHtmlFile(html) {
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR);
+  }
+  fs.writeFileSync(outputPath, html);
 }
 // add the new employee to employeeArray
 // ask if there is another employee to add
