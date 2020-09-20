@@ -164,7 +164,7 @@ function createNewIntern(employeeConfigObj) {
   employeeArr.push(newIntern);
   askForNextEntry();
 }
-
+// Determine if they want to add another employee, or render the HTML
 function askForNextEntry() {
   inquirer
     .prompt([
@@ -187,17 +187,14 @@ function askForNextEntry() {
       }
     });
 }
-
+// Check if the Output directory exists, and write the file once it does
 function createHtmlFile(html) {
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);
   }
   fs.writeFileSync(outputPath, html);
 }
-// add the new employee to employeeArray
-// ask if there is another employee to add
-// if yes - call the top function again
-// if no - call the render function
+
 main();
 
 // _____________________________________________________________________________
