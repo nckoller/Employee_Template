@@ -19,7 +19,7 @@ First, make sure you have [Node.js](https://nodejs.org/en/) installed on your co
 ## Usage
 
 The application will ask the user a series of prompts (ex: "What is the employee's name?"). Depending on the employee's role, it will ask for different information. Once all the prompts are answered, the responses will be formatted and saved to a new file in the "output" directory. The filename will be "team.html".
-<img src="/../assets/TeamTemplateDemoImg.png" src="screenshot of webpage with employee cards">
+<img src="assets/TeamTemplateDemoImg.png" src="screenshot of webpage with employee cards">
 
 ## License
 
