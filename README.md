@@ -9,8 +9,9 @@ This application uses Node.js to help a user draft a webpage that displays membe
 1. [Instructions](#instructions)
 2. [Usage](#usage)
 3. [License](#license)
-4. [Contributing](#contributing)
-5. [Questions](#questions)
+4. [Credits](#credits)
+5. [Contributing](#contributing)
+6. [Questions](#questions)
 
 ## Instructions
 
@@ -24,6 +25,10 @@ The application will ask the user a series of prompts (ex: "What is the employee
 ## License
 
 This application is covered under the MIT License.
+
+## Credits
+
+This project was prompted by a homework assignment through Triology Education Services. The unit tests, html templates, and htmlRender.js files were written by Trilogy Education Services. I provided additional styling in the style.css file.
 
 ## Contributing
 
