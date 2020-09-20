@@ -1,0 +1,32 @@
+#heading {
+  background-color: #4b4e6dff;
+}
+h1 {
+  color: #fff;
+}
+
+body {
+  background-color: #a2c7e5ff;
+}
+
+.card-header {
+  background-color: #eac435ff;
+}
+.card-body {
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.list-group-item {
+  border-color: #fff;
+}
+.employee-card {
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 5px 5px rgb(54, 67, 77);
+}
+
+h2,
+h3 {
+  text-align: center;
+}
